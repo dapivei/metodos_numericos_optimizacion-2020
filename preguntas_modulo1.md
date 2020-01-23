@@ -1,8 +1,16 @@
 # Módulo 1: Cómputo Científico
+<div align="justify">
 
-Estas preguntas se responden a manera de preparación para los exámenes de teoría que se realizan en el curso **"Métodos Numéricos y Optimización 2020"**.
+Estas información sirve como preparación para los exámenes de teoría que se realizan en el curso **"Métodos Numéricos y Optimización 2020"**.
 
-## 1.1 Análisis numérico y cómputo científico¶
+Los temas abarcados para el primer exámen son:
+
+-   [x] Análisis numérico y cómputo científico
+-   [x] Sistema de punto flotante
+-   [x] Condición, estabilidad y normas: condición de un problema y estabilidad del algoritmo
+
+
+## 1.1 Análisis numérico y cómputo científico
 
 ###### 1) ¿Cuáles son las características del análisis numérico y cómputo científico?
 
@@ -127,3 +135,5 @@ c. que g sea inestable?
 ## 1.6 Perfilamento de código
 
 ## 1.7 OPciones para resolver bottlenecks:
+
+<p align="justify">
