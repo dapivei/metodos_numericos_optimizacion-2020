@@ -51,14 +51,54 @@ Un Sistema de Punto Flotante Normalizado es aquel que cumple: $$d_1 \in \{1,2,\d
 ###### 4) Menciona algunas propiedades de un sistema de punto flotante normalizado.
 
 ###### 5) ¿Cuántos bits se utilizan en el hardware de una máquina para almacenar un número en un sistema de doble precisión?
+
+Un sistema de punto flotante (SPF) de doble precisión utiliza **64 bits** para representar un número real. El primero es un indicador de signo denotado por $s$. Le siguen $11$ bits para construir al exponente $c$ llamado también característica y $52$ bits que construyen a la parte fraccionaria $f$ de la mantisa. La base es $\beta=2$.
+
+*Nota 1: si es SPFN entonces aunque se tienen 52 bits, éstos se utilizan para almacenar un dígito más del número (ver Obs3 anterior). Así, en un SPF en general maneja 52 (o 53) dígitos binarios, que corresponden a aproximadamente 15 (o 16) dígitos decimales. Ver: Double-precision floating-point format.*
 ###### 6) ¿Qué nombre reciben los errores que se generan por utilizar un sistema de punto flotante?
+
+Al ver el diagrama anterior de la representación gráfica de un SPF se observa que existen huecos entre cada número de máquina. Lo anterior implica que al ingresar un número real $x$ en la computadora, ésta realiza una aproximación a $x$ que se encuentre en el SPF. Esta aproximación genera errores conocidos con el nombre de errores por redondeo.
+
 ###### 7) ¿Cuáles reglas utiliza la máquina para dar aproximaciones a un número?
+
+Entre las reglas que una computadora realiza para dar las aproximaciones a un número $x \in \mathbb{R}$ están: la regla de corte y la de redondeo y se pueden representar con funciones matemáticas:
+
++ **Regla de corte**: sea $fl_c : \mathbb{R} \rightarrow \mathcal{F}\mathcal{l}$ una función cuya regla de correspondencia es: $x \in \mathbb{R}$ con $x$ en el rango de valores del SPF, entonces: $x = \pm 0.d_1d_2 \dots d_kd_{k+1}\dots \times \beta^n$ y la regla de corte a $k$ dígitos es: $fl_c(x) = \pm 0.d_1d_2 \dots d_k$.
+
++ **Regla de redondeo**: sean $\beta=10$ y $fl_r : \mathbb{R} \rightarrow \mathcal{F}\mathcal{l}$ una función cuya regla de correspondencia es: $x \in \mathbb{R}$ con $x$ en el rango de valores del SPF, entonces: $x = \pm 0.d_1d_2 \dots d_kd_{k+1}\dots \times \beta^n$ y la regla de redondeo es:
+$$f_r(x) = \begin{cases}
+\text{sumar uno a } d_k &amp; \text{si } d_{k+1} \geq 5,\\
+f_c(x) &amp; \text{en otro caso}
+\end{cases}$$
+
+*Obs: también la regla $fl_r(\cdot)$ se define como antes pero se añade la restricción entre si es par o impar el último dígito en caso de empate, entonces se almacena el par.*
+
 ###### 8) Explica con palabras la diferencia entre el epsilon de la máquina y el nivel de underflow:
-a.¿Cuál de ellos depende únicamente del número de dígitos de la mantisa?
-b.¿Cuál de ellos depende únicamente del número de dígitos del exponente?
-c.¿Cuál de ellos no depende de la reglas usadas que se preguntaron en la pregunta 7?
+
+
+a. ¿Cuál de ellos depende únicamente del número de dígitos de la mantisa?
+b. ¿Cuál de ellos depende únicamente del número de dígitos del exponente?
+c. ¿Cuál de ellos no depende de la reglas usadas que se preguntaron en la pregunta 7?
+
 ###### 9) Si calculamos un error relativo para una aproximación y resulta ser del orden de $10^{-8}$ ¿alrededor de cuántos dígitos correctos tengo en mi aproximación?
+
 ###### 10) Menciona algunos problemas típicos de la aritmética de máquina y algunas formas de resolverlos.
+
+Problemas típicos:
+
++ Problema de cancelación: pérdida de cifras significativas a partir de la resta de números similares.
++ Suma entre un número de magnitud grande y un número de magnitud pequeña.
++ Sumas con términos que involucren signos alternados.
++ Multiplicación por un número de magnitud grande.
++ División por un número de magnitud pequeña.
+
+Posibles soluciones:
+
++ Usar mayor precisión.
++ Reordenar operaciones.
++ Reescribir expresiones matemáticas para obtener expresiones equivalentes.
++ Escalar las variables. También funciona estandarizarlas.
+
 
 ## 1.3 Condición, estabilidad y normas: condición de un problema y estabilidad del algoritmo
 
@@ -77,6 +117,8 @@ b. que g sea estable hacia atrás?
 c. que g sea inestable?
 
 ###### 9) ¿Qué ventaja(s) se tiene(n) al calcular un error hacia atrás vs calcular un error hacia delante?
+
+
 
 ## 1.4 Polinomios de Taylor y diferenciación numérica
 
