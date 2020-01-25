@@ -9,7 +9,7 @@ En específico, contiene:
 
 |Módulo|Descripción|
 |:---:|:---:|
-|- [X] |Cómputo científico|
+|1|Cómputo científico|
 |2|Cómputo en paralelo|
 |3|Cómputo matricial|
 |4|Optimización|
