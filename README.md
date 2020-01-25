@@ -1,6 +1,6 @@
 # Métodos Númericos y Optimización 2020
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dapivei/metodos_numericos_optimizacion-2020/Git commit)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dapivei/metodos_numericos_optimizacion-2020/master)
 
 ***
 
