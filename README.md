@@ -14,6 +14,7 @@ En específico, contiene:
 |2|Cómputo en paralelo|
 |3|Cómputo matricial|
 |4|Optimización|
+
 </center>
 
 
