@@ -1,6 +1,5 @@
 numpy
 C
-gcc
 jupyter
 pip
-
+gcc@5
