@@ -1,4 +1,4 @@
-name: python 3.8.1
+name: python-3.8.1
 dependencies:
   - python=3.8.1
   - numpy
@@ -6,5 +6,4 @@ dependencies:
   - gcc
   - jupyter
   - pip
-
 
