@@ -4,7 +4,7 @@ Contiene trabajos y avances realizados a propósito de la materia "Métodos Num�
 
 En específico, contiene: 
 
-[X] Respuestas a las preguntas de comprehensión que están al final de cada tema visto en clase.
+[X]Respuestas a las preguntas de comprehensión que están al final de cada tema visto en clase.
 
 [X] Tareas implementadas en C
 
