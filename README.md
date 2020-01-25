@@ -6,6 +6,7 @@ En específico, contiene:
 
 - [X] Respuestas a las preguntas de comprehensión que están al final de cada tema visto en clase.
 
+<center>
 
 |Módulo|Descripción|
 |:---:|:---:|
@@ -13,6 +14,8 @@ En específico, contiene:
 |2|Cómputo en paralelo|
 |3|Cómputo matricial|
 |4|Optimización|
+</center>
+
 
 - [X] Tareas implementadas en C
 
