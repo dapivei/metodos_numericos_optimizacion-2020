@@ -2,6 +2,8 @@
 
 Fill in the fields to see the markdown badge snippet.
 
+Fill in the fields to see the rST badge snippet.
+
 ***
 
 Contiene trabajos y avances realizados a propósito de la materia "Métodos Numéricos y Optimización 2020".
