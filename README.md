@@ -21,6 +21,6 @@ En específico, contiene:
 </div>
 
 
-- [X] Tareas implementadas en C
+- [X] [Tareas implementadas en C](https://github.com/dapivei/metodos_numericos_optimizacion-2020/tree/master/Tareas%20C)
 
 - [ ] Desarrollo del proyecto final
