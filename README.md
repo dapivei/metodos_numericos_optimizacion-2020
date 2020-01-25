@@ -6,6 +6,6 @@ En específico, contiene:
 
 - [X] Respuestas a las preguntas de comprehensión que están al final de cada tema visto en clase.
 
-[X] Tareas implementadas en C
+- [X] Tareas implementadas en C
 
-+ Desarrollo del proyecto final
+- [ ] Desarrollo del proyecto final
