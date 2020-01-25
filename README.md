@@ -10,7 +10,6 @@ En específico, contiene:
 
 <div align="center">
 
-</div>
 
 |Módulo|Descripción|
 |:---:|:---:|
