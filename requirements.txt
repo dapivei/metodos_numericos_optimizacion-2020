@@ -1,6 +1,6 @@
 name: python 3
 dependencies:
-  - python 3
+  - python=3
   - numpy
   - C
   - gcc
