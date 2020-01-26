@@ -1,5 +1,0 @@
-numpy
-C
-jupyter
-pip
-gcc@5
